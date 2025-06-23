@@ -1638,7 +1638,8 @@ Respond with a JSON format:
                 headers: {
                     'Content-Type': 'application/json',
                     'x-api-key': config.claude.apiKey,
-                    'anthropic-version': '2023-06-01'
+                    'anthropic-version': '2023-06-01',
+                    'anthropic-dangerous-direct-browser-access': 'true'
                 },
                 body: JSON.stringify({
                     model: config.claude.model,
